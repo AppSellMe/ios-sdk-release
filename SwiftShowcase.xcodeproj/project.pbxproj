@@ -12,6 +12,7 @@
 		13AD718521059A8200C30E2D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AD718321059A8200C30E2D /* Main.storyboard */; };
 		13AD718721059A8300C30E2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AD718621059A8300C30E2D /* Assets.xcassets */; };
 		13AD718A21059A8300C30E2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AD718821059A8300C30E2D /* LaunchScreen.storyboard */; };
+		1EEFB31B2BF86B11950C2C7A /* Pods_SwiftShowcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5C1DDA1231C06439D7C897E /* Pods_SwiftShowcase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +36,9 @@
 		13AD718621059A8300C30E2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13AD718921059A8300C30E2D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AD718B21059A8300C30E2D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CFAC338AC1B755A86D6E998 /* Pods-SwiftShowcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftShowcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftShowcase/Pods-SwiftShowcase.debug.xcconfig"; sourceTree = "<group>"; };
+		CBC175E17BDADEBBFE72F1BA /* Pods-SwiftShowcase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftShowcase.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftShowcase/Pods-SwiftShowcase.release.xcconfig"; sourceTree = "<group>"; };
+		E5C1DDA1231C06439D7C897E /* Pods_SwiftShowcase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftShowcase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EEFB31B2BF86B11950C2C7A /* Pods_SwiftShowcase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 				13AD717E21059A8200C30E2D /* SwiftShowcase */,
 				13AD717D21059A8200C30E2D /* Products */,
 				13AD71E02105A2AF00C30E2D /* Frameworks */,
+				83E21A88564D1D13DBF1B439 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,8 +87,18 @@
 		13AD71E02105A2AF00C30E2D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E5C1DDA1231C06439D7C897E /* Pods_SwiftShowcase.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83E21A88564D1D13DBF1B439 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4CFAC338AC1B755A86D6E998 /* Pods-SwiftShowcase.debug.xcconfig */,
+				CBC175E17BDADEBBFE72F1BA /* Pods-SwiftShowcase.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,10 +108,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13AD718E21059A8300C30E2D /* Build configuration list for PBXNativeTarget "SwiftShowcase" */;
 			buildPhases = (
+				7EE583F071227F7E58607474 /* [CP] Check Pods Manifest.lock */,
 				13AD717821059A8200C30E2D /* Sources */,
 				13AD717921059A8200C30E2D /* Frameworks */,
 				13AD717A21059A8200C30E2D /* Resources */,
 				136DC6652105BF4F003BA018 /* Embed Frameworks */,
+				145AA7A468596852BEA9CC24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +169,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		145AA7A468596852BEA9CC24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftShowcase/Pods-SwiftShowcase-frameworks.sh",
+				"${PODS_ROOT}/AppSellSDK/AppSellSDK.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppSellSDK.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftShowcase/Pods-SwiftShowcase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7EE583F071227F7E58607474 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwiftShowcase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		13AD717821059A8200C30E2D /* Sources */ = {
@@ -300,6 +357,7 @@
 		};
 		13AD718F21059A8300C30E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4CFAC338AC1B755A86D6E998 /* Pods-SwiftShowcase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,10 +367,7 @@
 					"$(PROJECT_DIR)/SDK",
 				);
 				INFOPLIST_FILE = SwiftShowcase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.appsell.SwiftShowcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -322,6 +377,7 @@
 		};
 		13AD719021059A8300C30E2D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC175E17BDADEBBFE72F1BA /* Pods-SwiftShowcase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -331,10 +387,7 @@
 					"$(PROJECT_DIR)/SDK",
 				);
 				INFOPLIST_FILE = SwiftShowcase/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.appsell.SwiftShowcase;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
