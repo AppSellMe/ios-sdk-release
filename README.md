@@ -1,5 +1,6 @@
 # AppSell iOS SDK
 
+
 ### Install with CocoaPods
 In your `Podfile`, add
 ```
@@ -11,14 +12,17 @@ pod update
 ```
 This installs AppSell SDK as a framework. Declare `import AppSellSDK` in your swift file to use the library.
 
+
 ### Objective C support
-SDK written in swift. If your app doesn't contain any swift code yet, you should set **Always Embed Swift Standard Libraries** complier option on **Build Settings** page to **Yes**.
+SDK is written in swift. If your app doesn't contain any swift code yet, you should set **Always Embed Swift Standard Libraries** complier option on **Build Settings** page to **Yes**.
+
 
 ### Setup URL schema of Your Application
 
 You need to setup a url-schema for your application, which looks like app-APP_ID (e.g. **app-abc12345-abcd-1234-abcd-123456abcdef**).
 
 [How to register your own URL Scheme.](https://developer.apple.com/documentation/uikit/core_app/allowing_apps_and_websites_to_link_to_your_content/defining_a_custom_url_scheme_for_your_app)
+
 
 ### Pass urls to SDK
 Add url hooks to `application:openURL:options:` method in AppDelegate:
@@ -36,6 +40,7 @@ Or in Objective C:
     return YES;
 }
 ```
+
 
 ### Init SDK
 
@@ -64,6 +69,7 @@ NSString* appID = @"abc12345-abcd-1234-abcd-123456abcdef";
     }
 }];
 ```
+
 
 ### Send events
 

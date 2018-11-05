@@ -7,12 +7,12 @@ target 'ObjcShowcase' do
    workspace 'AppSellSDKShowcase'
    project 'ObjcShowcase.xcodeproj'
 
-   pod 'AppSellSDK', :podspec => '~/xCode/AppSellSDK/'
+   pod 'AppSellSDK'
 end
 
 target 'SwiftShowcase' do
    workspace 'AppSellSDKShowcase'
    project 'SwiftShowcase.xcodeproj'
 
-   pod 'AppSellSDK', :podspec => '~/xCode/AppSellSDK/'
+   pod 'AppSellSDK'
 end

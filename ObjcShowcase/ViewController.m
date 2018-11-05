@@ -27,7 +27,7 @@
 }
 
 - (IBAction)initSDK:(id)sender {
-    [AppSellSDK initAppWith:@"bdad341b-53a1-4cf6-ad8e-7acfcd769e0d" completion:^(NSError * _Nullable error) {
+    [AppSellSDK initAppWith:@"e7e600ed-54f5-45a6-95b4-726959e8e368" completion:^(NSError * _Nullable error) {
         [self showMessageForError:error];
     }];
 }
@@ -38,6 +38,21 @@
     }];
 }
 
+- (IBAction)getReferrerID:(id)sender {
+    NSString* referrerID = [AppSellSDK referrerID];
+    NSString* message = nil;
+    
+    if (referrerID == nil) {
+        message = @"ReferrerID = nil";
+    } else {
+        message = [NSString stringWithFormat:@"ReferrerID = %@", referrerID];
+    }
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"" message:message preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+    
 - (void)showMessageForError: (nullable NSError*)error {
     NSString* message = nil;
     

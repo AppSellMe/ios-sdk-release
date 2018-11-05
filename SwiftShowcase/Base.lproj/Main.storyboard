@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bco-LI-hI4">
-                                <rect key="frame" x="148" y="230.5" width="78" height="30"/>
+                                <rect key="frame" x="148.5" y="230" width="78" height="30"/>
                                 <state key="normal" title="Send event"/>
                                 <connections>
                                     <action selector="sendEvent" destination="BYZ-38-t0r" eventType="touchUpInside" id="io8-11-TTz"/>
@@ -40,7 +40,20 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After successfull init you can send events." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fxB-JL-uB0">
-                                <rect key="frame" x="16" y="194" width="343" height="20.5"/>
+                                <rect key="frame" x="16" y="193.5" width="343" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQN-2K-GGz">
+                                <rect key="frame" x="138" y="326.5" width="99" height="30"/>
+                                <state key="normal" title="Get referrer ID"/>
+                                <connections>
+                                    <action selector="getReferrerID" destination="BYZ-38-t0r" eventType="touchUpInside" id="rsm-ab-7bc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And get referrerID" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1kd-FZ-1C4">
+                                <rect key="frame" x="16" y="290" width="343" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -52,10 +65,15 @@
                             <constraint firstItem="fxB-JL-uB0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A0d-OI-O0C"/>
                             <constraint firstItem="vSo-Ne-EkS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="BL3-m1-jKH"/>
                             <constraint firstItem="vSo-Ne-EkS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="F1y-ws-WVs"/>
+                            <constraint firstItem="gQN-2K-GGz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IXx-qB-eKi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1kd-FZ-1C4" secondAttribute="trailing" constant="16" id="OfY-Wp-XB4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fxB-JL-uB0" secondAttribute="trailing" constant="16" id="R3j-pm-wLO"/>
+                            <constraint firstItem="gQN-2K-GGz" firstAttribute="top" secondItem="1kd-FZ-1C4" secondAttribute="bottom" constant="16" id="ZAl-9I-6qJ"/>
                             <constraint firstItem="RvX-S1-bcO" firstAttribute="top" secondItem="vSo-Ne-EkS" secondAttribute="bottom" constant="16" id="aM0-9n-5yM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vSo-Ne-EkS" secondAttribute="trailing" constant="16" id="atQ-dw-iaU"/>
+                            <constraint firstItem="1kd-FZ-1C4" firstAttribute="top" secondItem="Bco-LI-hI4" secondAttribute="bottom" constant="30" id="cav-N2-8fh"/>
                             <constraint firstItem="Bco-LI-hI4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fcX-qS-P7O"/>
+                            <constraint firstItem="1kd-FZ-1C4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ggG-Cc-9gc"/>
                             <constraint firstItem="Bco-LI-hI4" firstAttribute="top" secondItem="fxB-JL-uB0" secondAttribute="bottom" constant="16" id="pmj-1q-8eb"/>
                             <constraint firstItem="RvX-S1-bcO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wfM-ik-MOH"/>
                         </constraints>
