@@ -1,5 +1,6 @@
 # AppSell iOS SDK
 
+## Installation
 
 ### Install with CocoaPods
 In your `Podfile`, add
