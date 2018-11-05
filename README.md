@@ -11,6 +11,9 @@ pod update
 ```
 This installs AppSell SDK as a framework. Declare `import AppSellSDK` in your swift file to use the library.
 
+### Objective C support
+SDK written in swift. If your app doesn't contain any swift code yet, you should set **Always Embed Swift Standard Libraries** complier option on **Build Settings** page to **Yes**.
+
 ### Setup URL schema of Your Application
 
 You need to setup a url-schema for your application, which looks like app-APP_ID (e.g. **app-abc12345-abcd-1234-abcd-123456abcdef**).
