@@ -13,6 +13,10 @@ pod update
 This installs AppSell SDK as a framework. Declare `import AppSellSDK` in your swift file to use the library.
 
 
+### Manual install
+If you don't want to use cocoapods you can grab framework directly, it's placed in `SDK` folder of this repository.
+
+
 ### Objective C support
 SDK is written in swift. If your app doesn't contain any swift code yet, you should set **Always Embed Swift Standard Libraries** complier option on **Build Settings** page to **Yes**.
 
