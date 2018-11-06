@@ -78,9 +78,11 @@ NSString* appID = @"abc12345-abcd-1234-abcd-123456abcdef";
 ```
 
 Don't forget to make sure that error is nil.
+That's all!
 
+## SDK usage
 
-### 4. Send events
+### Send event
 
 ```swift
 AppSellSDK.sendEvent("event_name") { (error) in
@@ -103,4 +105,26 @@ Or in Objective C:
 }];
 ```
 
-That's all!
+
+
+### Get referrer ID
+
+```swift
+if let referrerID = AppSellSDK.referrerID {
+    print("Referrer ID is \(referrerID)")
+} else {
+    print("Referrer ID is not known")
+}
+```
+
+Or in Objective C:
+```objc
+NSString* referrerID = [AppSellSDK referrerID];
+
+if (referrerID == nil) {
+    NSLog(@"Referrer ID is not known");
+} else {
+    NSLog(@"Referrer ID is %@", referrerID);
+}
+```
+
