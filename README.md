@@ -77,6 +77,8 @@ NSString* appID = @"abc12345-abcd-1234-abcd-123456abcdef";
 }];
 ```
 
+Don't forget to make sure that error is nil.
+
 
 ### 4. Send events
 
