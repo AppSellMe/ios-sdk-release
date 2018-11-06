@@ -27,7 +27,7 @@
 }
 
 - (IBAction)initSDK:(id)sender {
-    [AppSellSDK initAppWith:@"e7e600ed-54f5-45a6-95b4-726959e8e368" completion:^(NSError * _Nullable error) {
+    [AppSellSDK initAppWith:@"177c2f76-7c18-4d71-96f2-7c05d27d3586" completion:^(NSError * _Nullable error) {
         [self showMessageForError:error];
     }];
 }
