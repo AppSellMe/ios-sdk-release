@@ -5,7 +5,7 @@
 ### Install with CocoaPods
 In your `Podfile`, add
 ```
-pod 'AppSellS'
+pod 'AppSell'
 ```
 and run 
 ```
